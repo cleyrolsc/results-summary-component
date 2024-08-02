@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body class="d-flex justify-content-center align-items-center">
+    <div class="main-container d-flex">
+      <div
+        class="result-section d-flex flex-column justify-content-center align-items-center"
+      >
+        <p class="result-section__title">Your Result</p>
+        <p class="result-section__average d-flex flex-column">
+          <span class="result-section__score">76</span
+          ><span class="result-section__total">of 100</span>
+        </p>
+        <p class="result-section__feedback">Great</p>
+        <p class="result-section__description">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+      <main class="d-flex justify-content-center flex-column">
+        <div class="summary-section">
+          <p class="title mb-4 mt-4">Summary</p>
+          <div
+            class="d-flex justify-content-between score-container align-items-center reaction"
+          >
+            <div class="d-flex">
+              <img class="icon" src="assets/images/icon-reaction.svg" alt="" />
+              <p class="score-sense"></p>
+            </div>
+            <p>
+              <span class="score"></span>
+              <span class="total-score">/ 100</span>
+            </p>
+          </div>
+          <div class="d-flex justify-content-between score-container memory">
+            <div class="d-flex">
+              <img class="icon" src="assets/images/icon-memory.svg" alt="" />
+              <p class="score-sense"></p>
+            </div>
+            <p>
+              <span class="score"></span>
+              <span class="total-score">/ 100</span>
+            </p>
+          </div>
+          <div class="d-flex justify-content-between score-container verbal">
+            <div class="d-flex">
+              <img class="icon" src="assets/images/icon-verbal.svg" alt="" />
+              <p class="score-sense"></p>
+            </div>
+            <p>
+              <span class="score"></span>
+              <span class="total-score">/ 100</span>
+            </p>
+          </div>
+          <div class="d-flex justify-content-between score-container visual">
+            <div class="d-flex">
+              <img class="icon" src="assets/images/icon-visual.svg" alt="" />
+              <p class="score-sense"></p>
+            </div>
+            <p>
+              <span class="score"></span>
+              <span class="total-score">/ 100</span>
+            </p>
+          </div>
+          <button id="continue-btn">Continue</button>
+        </div>
+      </main>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
